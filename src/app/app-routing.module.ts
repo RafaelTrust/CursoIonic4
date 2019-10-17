@@ -37,7 +37,9 @@ const routes: Routes = [
   },
   { path: 'notificacao', loadChildren: './notificacao/notificacao.module#NotificacaoPageModule' },
   { path: 'layout-grid', loadChildren: './layout-grid/layout-grid.module#LayoutGridPageModule' },
-  { path: 'layout-css-utilities', loadChildren: './layout-css-utilities/layout-css-utilities.module#LayoutCssUtilitiesPageModule' },
+  { path: 'layout-css-utilities', loadChildren: './layout-css-utilities/layout-css-utilities.module#LayoutCssUtilitiesPageModule' },  { path: 'componente', loadChildren: './componente/componente.module#ComponentePageModule' },
+  { path: 'componente-action-sheet', loadChildren: './componente-action-sheet/componente-action-sheet.module#ComponenteActionSheetPageModule' },
+
   
 ];
 

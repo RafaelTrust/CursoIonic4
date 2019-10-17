@@ -19,12 +19,17 @@ export class AppComponent {
     {
       title: 'Instalacao',
       url: '/instalacao',
-      icon: 'home'
+      icon: 'download'
     },
     {
       title: 'Layout',
       url: '/layout',
-      icon: 'list'
+      icon: 'color-palette'
+    },
+    {
+      title: 'Componentes',
+      url: '/componente',
+      icon: 'cube'
     }
   ];
 
