@@ -45,6 +45,11 @@ const routes: Routes = [
   { path: 'componente-card', loadChildren: './componente-card/componente-card.module#ComponenteCardPageModule' },
   { path: 'componente-checkbox', loadChildren: './componente-checkbox/componente-checkbox.module#ComponenteCheckboxPageModule' },
   { path: 'componente-radio', loadChildren: './componente-radio/componente-radio.module#ComponenteRadioPageModule' },
+  { path: 'componente-date-time', loadChildren: './componente-date-time/componente-date-time.module#ComponenteDateTimePageModule' },
+  { path: 'componente-fab', loadChildren: './componente-fab/componente-fab.module#ComponenteFabPageModule' },
+  { path: 'componente-input', loadChildren: './componente-input/componente-input.module#ComponenteInputPageModule' },
+  { path: 'componente-lista', loadChildren: './componente-lista/componente-lista.module#ComponenteListaPageModule' },
+  { path: 'componente-loading', loadChildren: './componente-loading/componente-loading.module#ComponenteLoadingPageModule' },
 
   
 ];

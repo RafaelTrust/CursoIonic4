@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente - Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input type="text" placeholder="Escreva seu nome aqui"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Senha Floating<ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input type="password" required placeholder="Digite sua senha" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Senha Stacked<ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input type="password" required placeholder="Digite sua senha" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Senha Fixed<ion-text color="danger">*</ion-text>
+    </ion-label>
+    <ion-input type="password" required placeholder="Digite sua senha" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Date</ion-label>
+    <ion-datetime display-format="DD.MM.YYYY"></ion-datetime>
+  </ion-item>
+</ion-content>

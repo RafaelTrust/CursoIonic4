@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente - Date Time</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Data Default</ion-label>
+    <ion-datetime></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data com Display Format</ion-label>
+    <ion-datetime display-format="DD.MM.YYYY"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data com Picker Format</ion-label>
+    <ion-datetime display-format="MM.YYYY" picker-format="MMMM YYYY"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Data com Min e Max</ion-label>
+    <ion-datetime display-format="DD.MM.YYYY" min="2016" max="2021"></ion-datetime>
+  </ion-item>
+  <br>
+  <h3>Formatações</h3>
+  <ion-img src="/assets/date-time.PNG"></ion-img>
+</ion-content>

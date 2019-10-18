@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente - Loading</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="full" (click)="loadingDefault()">
+    Carregar Default
+  </ion-button>
+  <ion-button expand="full" (click)="loadingCostumizado('dots')">
+    Carregar Dots
+  </ion-button>
+  <ion-button expand="full" (click)="loadingCostumizado('bubbles')">
+    Carregar Bubbles
+  </ion-button>
+  <ion-button expand="full" (click)="loadingCostumizado('circles')">
+    Carregar Circles
+  </ion-button>
+  <ion-button expand="full" (click)="loadingCostumizado('circular')">
+    Carregar Circular
+  </ion-button>
+  <ion-button expand="full" (click)="loadingCostumizado('crescent')">
+    Carregar Crescent
+  </ion-button>
+  <ion-button expand="full" (click)="loadingCostumizado('lines')">
+    Carregar Lines (Default)
+  </ion-button>
+  <ion-button expand="full" (click)="loadingCostumizado('lines-small')">
+    Carregar Lines-Small
+  </ion-button>
+  <ion-button expand="full" (click)="loadingRequisicao()">
+      Carregar Fechando com Requisição (Translucido)
+    </ion-button>
+</ion-content>
