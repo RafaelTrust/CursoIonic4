@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente - Checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Default</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Disable</ion-label>
+    <ion-checkbox disabled></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Checked</ion-label>
+    <ion-checkbox checked></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Checked Disabled</ion-label>
+    <ion-checkbox checked disabled></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Primary</ion-label>
+    <ion-checkbox checked color="primary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Secundary</ion-label>
+    <ion-checkbox checked color="secondary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Terciary</ion-label>
+    <ion-checkbox checked color="tertiary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Success</ion-label>
+    <ion-checkbox checked color="success"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Warning</ion-label>
+    <ion-checkbox checked color="warning"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Danger</ion-label>
+    <ion-checkbox checked color="danger"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Light</ion-label>
+    <ion-checkbox checked color="light"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Medium</ion-label>
+    <ion-checkbox checked color="medium"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dark</ion-label>
+    <ion-checkbox checked color="dark"></ion-checkbox>
+  </ion-item>
+  <br>
+  <h3>Meses do Ano</h3>
+  <br>
+  <ion-list>
+    <ion-item *ngFor="let mes of meses">
+      <ion-label>{{mes.nomeDoMes}}</ion-label>
+      <ion-checkbox checked="{{mes.marcado}}" [(ngModel)]="mes.marcado" color="danger"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="exibirMeses()">
+    Exibir Meses Marcados
+  </ion-button>
+
+</ion-content>
