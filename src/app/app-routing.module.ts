@@ -50,6 +50,8 @@ const routes: Routes = [
   { path: 'componente-input', loadChildren: './componente-input/componente-input.module#ComponenteInputPageModule' },
   { path: 'componente-lista', loadChildren: './componente-lista/componente-lista.module#ComponenteListaPageModule' },
   { path: 'componente-loading', loadChildren: './componente-loading/componente-loading.module#ComponenteLoadingPageModule' },
+  { path: 'componente-modal', loadChildren: './componente-modal/componente-modal.module#ComponenteModalPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
 
   
 ];
