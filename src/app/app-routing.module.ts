@@ -52,6 +52,7 @@ const routes: Routes = [
   { path: 'componente-loading', loadChildren: './componente-loading/componente-loading.module#ComponenteLoadingPageModule' },
   { path: 'componente-modal', loadChildren: './componente-modal/componente-modal.module#ComponenteModalPageModule' },
   { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
+  { path: 'componente-range', loadChildren: './componente-range/componente-range.module#ComponenteRangePageModule' },
 
   
 ];
