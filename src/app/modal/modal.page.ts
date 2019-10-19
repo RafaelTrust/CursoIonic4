@@ -1,4 +1,6 @@
+import { ModalController, NavParams, AlertController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-modal',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalPage implements OnInit {
 
-  constructor() { }
+  constructor(private navParam : NavParams, private alertController : AlertController, public modalController: ModalController) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    let value = this.navParam.get('value');
+
+    const alert = await this.alertController.create({
+      header: 'Seja Bem Vindo',
+      message: 'O Valor passado para essa pagina foi ' + value,
+      buttons: ['OK']
+    });
+
+    await alert.present();
+
   }
 
+  
+
+  async closeModal() {
+    this.modalController.dismiss({value : 234});
+  }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, AlertController } from '@ionic/angular';
 import { ModalPage } from '../modal/modal.page';
+import { OverlayEventDetail } from '@ionic/core';
 
 @Component({
   selector: 'app-componente-modal',
@@ -9,18 +10,33 @@ import { ModalPage } from '../modal/modal.page';
 })
 export class ComponenteModalPage implements OnInit {
 
-  constructor(private modalCtrl : ModalController) { }
+  constructor(private modalCtrl : ModalController, private alertCtrl: AlertController) { }
 
   ngOnInit() {
+    
   }
+
+
 
   async showModal() {
     const modal = await this.modalCtrl.create({
     component: ModalPage,
-    componentProps: { value: 123 }
+    componentProps: { value : '123' },
+    backdropDismiss: true,
+    showBackdrop: true
     });
-  
-    await modal.present();
+
+    modal.onDidDismiss().then( async (responseModal: OverlayEventDetail) =>{
+      if(responseModal != null){
+        let data = await this.alertCtrl.create({
+          header:"Curso Ionic 4",
+          message: 'Valor recebido da pagina foi '+ responseModal.data.value
+        });
+        return await data.present();
+      }
+    });
+
+    return await modal.present();
   
   }
 }
