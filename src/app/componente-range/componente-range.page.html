@@ -28,7 +28,22 @@
       </ion-range>
     </ion-item>
     <ion-item text-center>
-        <ion-range min="500" max="2000" step="10" pin="true" color="danger"></ion-range>
-      </ion-item>
+      <ion-range min="500" max="2000" step="100" pin="true" snaps="true" color="danger"></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Range Duplo</ion-label>
+    </ion-item>
+    <ion-item text-center>
+      <ion-range dualKnobs="true" min="500" max="2000" step="100" pin="true" snaps="true" color="danger"></ion-range>
+    </ion-item>
+    <ion-item text-center>
+      <ion-range disabled dualKnobs="true" min="500" max="2000" step="100" pin="true" snaps="true" color="danger"></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range mode="ios" min="0" max="100" pin="true" color="primary"></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range mode="md" min="0" max="100" pin="true" color="primary"></ion-range>
+    </ion-item>
   </ion-list>
 </ion-content>

@@ -53,6 +53,11 @@ const routes: Routes = [
   { path: 'componente-modal', loadChildren: './componente-modal/componente-modal.module#ComponenteModalPageModule' },
   { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
   { path: 'componente-range', loadChildren: './componente-range/componente-range.module#ComponenteRangePageModule' },
+  { path: 'componente-select', loadChildren: './componente-select/componente-select.module#ComponenteSelectPageModule' },
+  { path: 'componente-slide', loadChildren: './componente-slide/componente-slide.module#ComponenteSlidePageModule' },
+  { path: 'componente-spinner', loadChildren: './componente-spinner/componente-spinner.module#ComponenteSpinnerPageModule' },
+  { path: 'componente-toast', loadChildren: './componente-toast/componente-toast.module#ComponenteToastPageModule' },
+  { path: 'componente-infinity-scroll', loadChildren: './componente-infinity-scroll/componente-infinity-scroll.module#ComponenteInfinityScrollPageModule' },
 
   
 ];

@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente - Select</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Select Simples</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select placeholder="Select Sexo">
+        <ion-select-option value="M">Mascuino</ion-select-option>
+        <ion-select-option value="F">Feminino</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cor</ion-label>
+      <ion-select placeholder="Selecione" value="Azul" okText="Selecionar" cancelText="Cancelar">
+        <ion-select-option value="Rosa">Rosa</ion-select-option>
+        <ion-select-option value="Vermelho">Vermelho</ion-select-option>
+        <ion-select-option value="Laranja">Laranja</ion-select-option>
+        <ion-select-option value="Amarelo">Amarelo</ion-select-option>
+        <ion-select-option value="Verde">Verde</ion-select-option>
+        <ion-select-option value="Azul">Azul</ion-select-option>
+        <ion-select-option value="Roxo">Roxo</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Select Multiplo</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Frutas</ion-label>
+      <ion-select multiple="true" placeholder="Select Pizza" value="Banana" okText="Selecionar" cancelText="Cancelar">
+        <ion-select-option value="Banana">Banana</ion-select-option>
+        <ion-select-option value="Morango">Morango</ion-select-option>
+        <ion-select-option value="Laranja">Laranja</ion-select-option>
+        <ion-select-option value="Goiaba">Goiaba</ion-select-option>
+        <ion-select-option value="Manga">Manga</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Animais</ion-label>
+      <ion-select multiple="true" placeholder="Selecione">
+        <ion-select-option value="Passaro" selected>Passaro</ion-select-option>
+        <ion-select-option value="Cachorro">Cachorro</ion-select-option>
+        <ion-select-option value="Gato" selected>Gato</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Select Customizado</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Alerta Pizza</ion-label>
+      <ion-select [interfaceOptions]="customAlertOptions" interface="alert" multiple="true" placeholder="Selecione">
+        <ion-select-option value="peperoni">Peperoni</ion-select-option>
+        <ion-select-option value="hawaii">Hawaii</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Popover Cidade</ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Selecione">
+        <ion-select-option value="João Pessoa">João Pessoa</ion-select-option>
+        <ion-select-option value="Rio de Janeiro">Rio de Janeiro</ion-select-option>
+        <ion-select-option value="São Paulo">São Paulo</ion-select-option>
+        <ion-select-option value="Goiânia">Goiânia</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Action Sheet Cores</ion-label>
+      <ion-select [interfaceOptions]="customActionSheetOptions" mode="md" interface="action-sheet" placeholder="Selecione">
+        <ion-select-option value="Azul">Azul</ion-select-option>
+        <ion-select-option value="Roxo">Roxo</ion-select-option>
+        <ion-select-option value="Marrom">Marrom</ion-select-option>
+        <ion-select-option value="Verde">Verde</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
