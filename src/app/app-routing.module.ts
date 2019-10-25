@@ -37,7 +37,8 @@ const routes: Routes = [
   },
   { path: 'notificacao', loadChildren: './notificacao/notificacao.module#NotificacaoPageModule' },
   { path: 'layout-grid', loadChildren: './layout-grid/layout-grid.module#LayoutGridPageModule' },
-  { path: 'layout-css-utilities', loadChildren: './layout-css-utilities/layout-css-utilities.module#LayoutCssUtilitiesPageModule' },  { path: 'componente', loadChildren: './componente/componente.module#ComponentePageModule' },
+  { path: 'layout-css-utilities', loadChildren: './layout-css-utilities/layout-css-utilities.module#LayoutCssUtilitiesPageModule' },
+  { path: 'componente', loadChildren: './componente/componente.module#ComponentePageModule' },
   { path: 'componente-action-sheet', loadChildren: './componente-action-sheet/componente-action-sheet.module#ComponenteActionSheetPageModule' },
   { path: 'componente-alert', loadChildren: './componente-alert/componente-alert.module#ComponenteAlertPageModule' },
   { path: 'componente-badges', loadChildren: './componente-badges/componente-badges.module#ComponenteBadgesPageModule' },
@@ -58,6 +59,12 @@ const routes: Routes = [
   { path: 'componente-spinner', loadChildren: './componente-spinner/componente-spinner.module#ComponenteSpinnerPageModule' },
   { path: 'componente-toast', loadChildren: './componente-toast/componente-toast.module#ComponenteToastPageModule' },
   { path: 'componente-infinity-scroll', loadChildren: './componente-infinity-scroll/componente-infinity-scroll.module#ComponenteInfinityScrollPageModule' },
+  { path: 'componente-popover', loadChildren: './componente-popover/componente-popover.module#ComponentePopoverPageModule' },
+  { path: 'componente-refresher', loadChildren: './componente-refresher/componente-refresher.module#ComponenteRefresherPageModule' },  { path: 'componente-searchbar', loadChildren: './componente-searchbar/componente-searchbar.module#ComponenteSearchbarPageModule' },
+  { path: 'comp', loadChildren: './comp/comp.module#CompPageModule' },
+  { path: 'componente-toggle', loadChildren: './componente-toggle/componente-toggle.module#ComponenteTogglePageModule' },
+
+
 
   
 ];
